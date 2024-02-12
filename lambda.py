@@ -29,7 +29,7 @@ def make_choice():
     print('3 - full price')
     print('4 - current price')
     print('5 - publish date')
-    choice = int(input('Addja meg a lehetőség számát! '))
+    choice = int(input('Adja meg a lehetőség számát! '))
 
     if choice == 1:
         key = 'title'
