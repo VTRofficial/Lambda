@@ -23,13 +23,13 @@ def sort_shoes(shoes, key):
 
 
 def make_choice():
-    print("Válasszon, melyik szempont alapján rendezzem a cipőket?")
-    print("1 - title")
-    print("2 - color")
-    print("3 - full price")
-    print("4 - current price")
-    print("5 - publish date")
-    choice = int(input("Addja meg a lehetőség számát! "))
+    print('Válasszon, melyik szempont alapján rendezzem a cipőket?')
+    print('1 - title')
+    print('2 - color')
+    print('3 - full price')
+    print('4 - current price')
+    print('5 - publish date')
+    choice = int(input('Addja meg a lehetőség számát! '))
 
     if choice == 1:
         key = 'title'
@@ -42,7 +42,7 @@ def make_choice():
     elif choice == 5:
         key = 'publish_date'
     else:
-        print("Érvénytelen választás!")
+        print('Érvénytelen választás!')
         return
     return key
 
@@ -53,7 +53,7 @@ def main():
     if key is None:
         return
     sorted_shoes = sort_shoes(shoes, key)
-    print("\nRendezett cipők:")
+    print('\nRendezett cipők:')
     pp(sorted_shoes)
 
 
