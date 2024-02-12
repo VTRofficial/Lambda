@@ -1,4 +1,4 @@
-from pprint import pprint
+from pprint import pp
 
 
 def open_cvs():
@@ -20,10 +20,6 @@ def open_cvs():
 def sort_shoes(shoes, key):
     sorted_shoes = sorted(shoes, key=lambda x: x[key])
     return sorted_shoes
-
-
-def display_shoes(shoes):
-    pprint(shoes)
 
 
 def make_choice():
@@ -58,7 +54,7 @@ def main():
         return
     sorted_shoes = sort_shoes(shoes, key)
     print("\nRendezett cipők:")
-    display_shoes(sorted_shoes)
+    pp(sorted_shoes)
 
 
 main()
