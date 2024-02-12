@@ -1,10 +1,10 @@
 from pprint import pp
 
 
-def open_cvs():
+def open_csv():
     shoes = []
     with open('sneakers.csv', 'r', encoding='utf-8') as file:
-        next(file)
+        next(file)  # https://www.geeksforgeeks.org/python-next-method/
         for line in file:
             data = line.strip().split(',')
             shoes.append({
@@ -48,7 +48,7 @@ def make_choice():
 
 
 def main():
-    shoes = open_cvs()
+    shoes = open_csv()
     key = make_choice()
     if key is None:
         return
